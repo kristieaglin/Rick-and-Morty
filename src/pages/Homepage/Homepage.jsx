@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react'
 import './Homepage.css'
 import axios from 'axios'
 import CharacterCard from '../../components/CharacterCard/CharacterCard';
+import Search from '../../components/Search/Search';
 
 function Homepage() {
   //show characters when page loads
@@ -28,6 +29,7 @@ function Homepage() {
   
   return (
     <div className='homepage-container'>
+      <Search setCharacters={setCharacters} />
       <h1>Main Charaters</h1>
       <div className='characters-container'>
         {
