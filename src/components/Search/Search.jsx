@@ -33,7 +33,7 @@ function Search({setCharacters}) {
 
   return (
     <form className='search-container' onSubmit={handleSubmit}>
-        <input type='text' onChange={(e)=>setQuery(e.target.value)} placeholder='Search all characters'></input>
+        <input type='text' value={query} onChange={(e)=>setQuery(e.target.value)} placeholder='Search all characters'></input>
     </form>
   )
 }
