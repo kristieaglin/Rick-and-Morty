@@ -2,6 +2,10 @@
     min-height: 100vh;
 }
 
+.about-banner{
+    width: 100%;
+}
+
 .about-container h1{
     padding: 20px;
 }
